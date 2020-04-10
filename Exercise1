@@ -1,0 +1,6 @@
+name = input("Qual o seu nome? ")
+age = int(input("Qual a sua idade? "))
+
+hund = int((2020 - age) +100)
+
+print ("Seu nome é ", name, "e tem ", age, " anos.\nE completará 100 anos em ", hund)

@@ -1,6 +1,20 @@
+# Autor: Alan Silva
+# 1_Character_Input.py
+# http://www.practicepython.org/exercise/2014/01/29/01-character-input.html
+#
+# Create a program that asks the user to enter their name and their age.
+# Print out a message addressed to them that tells them the year that they will turn 100 years old.
+# Extras:
+#    Add on to the previous program by asking the user for another number and printing out that many copies of the
+# previous message. (Hint: order of operations exists in Python)
+#    Print out that many copies of the previous message on separate lines. (Hint: the string "\n is the same as pressing
+# the ENTER button)
+
 name = input("Qual o seu nome? ")
 age = int(input("Qual a sua idade? "))
 
 hund = int((2020 - age) +100)
 
-print ("Seu nome é ", name, "e tem ", age, " anos.\nE completará 100 anos em ", hund)
+x = int(input("Quantas vezes deve repetir? "))
+
+print ("Seu nome é %s e você tem %s anos.\nE completará 100 anos em %s\n" % (name, age, hund)* x)
